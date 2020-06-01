@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="one">Kashmir University</div>
+
+<br><br>
+<input type="text" name="" id="color" placeholder="enter color" onkeyup="changeColor()">
+<input type="text" name="" id="tcolor" placeholder="enter text color" onkeyup="changeTextColor()">
+<input type="text" name="" id="talign" placeholder="enter text align" onkeyup="changealign()">
+</body>
+</html>
+
+
+<script type="text/javascript">
+  function changeColor()
+  {
+  	document.getElementById('one').style.backgroundColor= document.getElementById('color').value;
+  }	
+
+  function changeTextColor (){
+	  document.getElementById('one').style.color=document.getElementById('tcolor').value;
+  }
+
+  function changealign() {
+	  document.getElementById('one').style.textAlign=document.getElementById('talign').value;
+  }
+</script>
+
+<style type="text/css">
+body {
+	margin:0;
+}
+	#one {
+		background-color: red;
+		height: 50px;
+	}
+</style>
